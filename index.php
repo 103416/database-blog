@@ -31,6 +31,7 @@ $result = $stmt->fetchAll();
 <h1>Welkom bij onze blog</h1>
 
 <h3>"Wat als ik niet gewelkomt wil worden"</h3>
+<div id="main">
     <?php foreach ($result as $row) { ?>
         <div class="db_section">
 <!--        <a href="" class="ding"></a>-->
@@ -39,6 +40,7 @@ $result = $stmt->fetchAll();
             <p><?= $row["BlogBody"]?></p>
         </div>
     <?php }?>
+</div>
 </body>
 </html>
 

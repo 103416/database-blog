@@ -2,6 +2,16 @@ body {
     font-family: "Arial";
 }
 
-.db_section {
+#main {
+    display: flex;
+}
 
+.db_section {
+    margin: 20px;
+    padding: 0px 20px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: #579199 4px 3px 5px 1px;
 }
