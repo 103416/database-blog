@@ -31,16 +31,12 @@ $result = $stmt->fetchAll();
 <h1>Welkom bij onze blog</h1>
 
 <h3>"Wat als ik niet gewelkomt wil worden"</h3>
-<div id="main">
     <?php foreach ($result as $row) { ?>
-        <div class="db_section">
-<!--        <a href="" class="ding"></a>-->
-            <h1><?= $row['BlogOnderwerp']?></h1>
-            <h3><?= $row["BlogSubTekst"]?></h3>
-            <p><?= $row["BlogBody"]?></p>
-        </div>
+<!--    <a href="" class="ding"></a>-->
+         <h1><?= $row['BlogOnderwerp']?></h1>
+        <h3><?= $row["BlogSubTekst"]?></h3>
+        <p><?= $row["BlogBody"]?></p>
     <?php }?>
-</div>
 </body>
 </html>
 

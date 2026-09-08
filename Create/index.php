@@ -15,6 +15,22 @@
     <form method="post" action="./Create.php">
         <label for="onderwerp">je onderwerp:</label>
         <input type="text" id="onderwerp" name="onderwerp">
+
+        <label for="subtekst">subtekst</label>
+        <input type="text" id="subtekst" name="subtekst">
+
+        <label for="body">body tekst</label>
+        <input type="text" id="body" name="body">
+
+
+
+        <label for="wie">wie</label>
+        <select name="Wie" id="wie" required>
+            <option value="Ruben">Ruben</option>
+            <option value="Sven">Sven</option>
+            <option value="Niels">Niels</option>
+        </select>
+        <input type="submit">
     </form>
 </body>
 </html>
