@@ -1,17 +1,19 @@
 <?php
+
+//error reporting
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 try {
+//connectie database
     $pdo = new PDO("sqlite:identifier.sqlite");
 }catch(PDOException $e){
     echo $e->getMessage();
 }
-
+//pakt de database
 $stmt = $pdo->prepare("SELECT * FROM BlowBlo0gske");
 $stmt->execute();
 
 $result = $stmt->fetchAll();
-echo json_encode($result);
 ?>
 
 
@@ -25,6 +27,7 @@ echo json_encode($result);
     <title>Blog met mijjjj</title>
 </head>
 <body>
+<a href="./Create">create blog</a>
 <h1>Welkom bij onze blog</h1>
 
 <h3>"Wat als ik niet gewelkomt wil worden"</h3>
