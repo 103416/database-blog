@@ -23,6 +23,8 @@ $result = $stmt->fetchAll();
 </head>
 <body>
 <h1>Welkom bij onze blog</h1>
+
+<h3>"Wat als ik niet gewelkomt wil worden"</h3>
     <?php foreach ($result as $row) { ?>
     <a href="" class="ding"></a>
          <h1><?php $row['BlogOnderwerp']?></h1>
