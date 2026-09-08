@@ -33,9 +33,10 @@ $result = $stmt->fetchAll();
 <h3>"Wat als ik niet gewelkomt wil worden"</h3>
     <?php foreach ($result as $row) { ?>
 <!--    <a href="" class="ding"></a>-->
-         <h1><?= $row['BlogOnderwerp']?></h1>
+         <h1><?= $row['BlogOnderwerp']. " - " . $row["wie"]?></h1>
         <h3><?= $row["BlogSubTekst"]?></h3>
         <p><?= $row["BlogBody"]?></p>
+
     <?php }?>
 </body>
 </html>
