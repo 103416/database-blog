@@ -23,4 +23,4 @@ $query = "
         ':subtext' => $subtext,
         ':body' => $body
     ]);
-    header("Location:./Create.php");
+    header("Location:../");
