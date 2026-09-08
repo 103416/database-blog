@@ -1,4 +1,8 @@
 <?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 try {
     $pdo = new PDO("sqlite:../identifier.sqlite");
 }catch (PDOException $e){echo "Error: ".$e->getMessage();}

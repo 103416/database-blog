@@ -28,15 +28,16 @@ $result = $stmt->fetchAll();
 </head>
 <body>
 <a href="./Create">create blog</a>
+<a href="./Delete">Delete blog</a>
 <h1>Welkom bij onze blog</h1>
 
 <h3>"Wat als ik niet gewelkomt wil worden"</h3>
     <?php foreach ($result as $row) { ?>
-<!--    <a href="" class="ding"></a>-->
+    <a href="./Read/index.php?ID=<?= $row['BlogNummer']; ?>" class="ding">
          <h1><?= $row['BlogOnderwerp']. " - " . $row["wie"]?></h1>
         <h3><?= $row["BlogSubTekst"]?></h3>
         <p><?= $row["BlogBody"]?></p>
-
+    </a>
     <?php }?>
 </body>
 </html>
