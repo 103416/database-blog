@@ -29,6 +29,7 @@ $result = $stmt->fetchAll();
 <body>
 <a href="./Create">create blog</a>
 <a href="./Delete">Delete blog</a>
+<a href="./Update">update blog</a>
 <h1>Welkom bij onze blog</h1>
 
 <h3>"Wat als ik niet gewelkomt wil worden"</h3>
