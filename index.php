@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 try {
     $pdo = new PDO("sqlite:identifier.sqlite");
 }catch(PDOException $e){
@@ -24,10 +26,10 @@ $result = $stmt->fetchAll();
 <body>
 <h1>Welkom bij onze blog</h1>
     <?php foreach ($result as $row) { ?>
-    <a href="" class="ding"></a>
-         <h1><?php $row['BlogOnderwerp']?></h1>
-        <h3><?php $row["BlogSubTekst"]?></h3>
-        <p><?php $row["BlogBody"]?></p>
+<!--    <a href="" class="ding"></a>-->
+         <h1><?= $row['BlogOnderwerp']?></h1>
+        <h3><?= $row["BlogSubTekst"]?></h3>
+        <p><?= $row["BlogBody"]?></p>
     <?php }?>
 </body>
 </html>
