@@ -11,6 +11,7 @@ $stmt = $pdo->prepare("SELECT * FROM BlowBlo0gske");
 $stmt->execute();
 
 $result = $stmt->fetchAll();
+echo json_encode($result);
 ?>
 
 
