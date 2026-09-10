@@ -1,6 +1,7 @@
 form{
     width: clamp(200px, 50vw, 1000px);
-    background: #ff0000;
+    background: var(--main);
+    border: var(--light) 2px solid;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -11,9 +12,24 @@ input{
     margin: 10px;
     padding: 10px;
     width: 80%;
+    border-radius: 5px;
+}
+form select{
+    width: 40%;
+    text-align: center;
 }
 
-
+form .card{
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    background: var(--light);
+    padding: 10px 5px;
+    border-radius: 10px;
+}
 
 form .submit{
     background: green;
