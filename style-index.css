@@ -2,6 +2,7 @@ body {
     font-family: "Arial";
     overflow: hidden;
     margin: 0;
+    background-color: #50439a;
 }
 
 #main {
@@ -24,38 +25,46 @@ body {
     grid-template-columns: 10fr 4fr;
     height: 100vh;
     width: 100vw;
+    gap: 30px;
+    padding: 20px;
 }
 
 #balkie {
     grid-column: span 2;
-    background-color: purple;
+    background-color: #5d48c8;
     display: flex;
     padding: 30px 20px 30px 20px;
 
     a {
         color: black;
-        background-color: dodgerblue;
+        background-color: #b798ff;
         padding: 15px 20px 15px 20px;
-        margin: 5px;
+        margin: 0 15px 0 5px;
         border-radius: 50px;
         text-decoration: none;
+        transition: 0.5s;
     }
 
     a:hover {
-        background-color: green;
-        transform: scale(1.05);
+        transition: 0.3s;
+        transform: scale(1.15);
+    }
+
+    a:active {
+        transition: 0.1s;
+        transform: scale(0.9);
     }
 }
 
 #left_side {
     display: grid;
-    background-color: green;
+    background-color: #5d48c8;
     align-content: baseline;
 }
 
 #right_side {
     display: grid;
-    background-color: blue;
+    background-color: #5d48c8;
     overflow: scroll;
     scrollbar-width: none;
 }

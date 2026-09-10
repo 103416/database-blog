@@ -34,9 +34,6 @@ $result = $stmt->fetchAll();
         <a href="./Delete">Delete</a>
     </div>
     <div id="left_side">
-        <h1>Welkom bij onze blog</h1>
-
-        <h3>"Wat als ik niet gewelkomt wil worden"</h3>
         <div id="main">
             <?php foreach ($result as $row) { ?>
                 <div class="db_section">
