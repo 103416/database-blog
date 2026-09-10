@@ -10,7 +10,7 @@ try {
     echo $e->getMessage();
 }
 //pakt de database
-$stmt = $pdo->prepare("SELECT * FROM BlowBlo0gske");
+$stmt = $pdo->prepare("SELECT * FROM BlowBlo0gske ORDER BY BlogNummer ASC LIMIT 1");
 $stmt->execute();
 
 $result = $stmt->fetchAll();
@@ -37,7 +37,7 @@ $result = $stmt->fetchAll();
     <?php foreach ($result as $row) { ?>
 <div class="db_section">
     <a href="./Read/index.php?ID=<?= $row['BlogNummer']; ?>" class="ding">
-         <h1><?= $row['BlogOnderwerp']. " - " . $row["wie"]?></h1>
+        <h1><?= $row['BlogOnderwerp']. " - " . $row["wie"]?></h1>
         <h3><?= $row["BlogSubTekst"]?></h3>
         <p><?= $row["BlogBody"]?></p>
     </a>

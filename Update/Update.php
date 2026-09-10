@@ -26,7 +26,7 @@ $results = $stmt->fetchAll();
 <body>
 <h1></h1>
 <?php foreach ($results as $result) { ?>
-<form method="post" action="./verwerking_update.php">
+<form method="post" action="./verwerking_update.php?ID=<?= $result['BlogNummer']; ?>"">
     <label for="onderwerp">je onderwerp:</label>
     <input type="text" id="onderwerp" name="onderwerp" value="<?= $result['BlogOnderwerp'] ?>">
 
