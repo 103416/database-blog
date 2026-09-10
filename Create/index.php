@@ -16,24 +16,31 @@
 
     <form method="post" action="./Create.php">
         <h1>form</h1>
-        <label for="onderwerp">je onderwerp:</label>
-        <input type="text" id="onderwerp" name="onderwerp">
+        <div class="card">
+            <label for="onderwerp">je onderwerp:</label>
+            <input type="text" id="onderwerp" name="onderwerp">
+        </div>
+        <br>
+        <div class="card">
+            <label for="subtekst">subtekst</label>
+            <input type="text" id="subtekst" name="subtekst">
+        </div>
+        <br>
+        <div class="card">
+            <label for="body">body tekst</label>
+            <input type="text" id="body" name="body">
+        </div>
         <br>
 
-        <label for="subtekst">subtekst</label>
-        <input type="text" id="subtekst" name="subtekst">
-        <br>
-        <label for="body">body tekst</label>
-        <input type="text" id="body" name="body">
-        <br>
+        <div class="card">
+            <label for="wie">wie</label>
+            <select name="Wie" id="wie" required>
+                <option value="Ruben">Ruben</option>
+                <option value="Sven">Sven</option>
+                <option value="Niels">Niels</option>
+            </select>
+        </div>
 
-
-        <label for="wie">wie</label>
-        <select name="Wie" id="wie" required>
-            <option value="Ruben">Ruben</option>
-            <option value="Sven">Sven</option>
-            <option value="Niels">Niels</option>
-        </select>
         <br>
         <input type="submit" class="submit">
         <a href="../" class="back">go back</a>
