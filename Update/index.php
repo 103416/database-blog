@@ -21,10 +21,11 @@ $result = $stmt->fetchAll();
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../style/tables.css">
 </head>
-<body>
-<table border="1px">
+<body><a class="back" href="../">back </a>
+<table>
     <tr>
         <th>onderwerp</th>
         <th>subtekst</th>
@@ -42,5 +43,7 @@ $result = $stmt->fetchAll();
         </tr>
     <?php } ?>
 </table>
+
+
 </body>
 </html>
