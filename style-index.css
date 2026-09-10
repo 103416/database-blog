@@ -63,8 +63,21 @@ body {
 }
 
 #right_side {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background-color: #5d48c8;
     overflow: scroll;
     scrollbar-width: none;
+}
+
+
+
+#right_side .card{
+    background: var(--lighter);
+    height: fit-content;
+    margin: 5px 15px;
+    padding: 0 0 0 20px;
+    color: var(--dark);
+    border-radius: 5px;
+    border: solid 3px var(--light);
 }

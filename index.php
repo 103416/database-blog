@@ -13,7 +13,11 @@ try {
 $stmt = $pdo->prepare("SELECT * FROM BlowBlo0gske ORDER BY BlogNummer ASC LIMIT 1");
 $stmt->execute();
 
+$main = $pdo->prepare("SELECT * FROM BlowBlo0gske");
+$main->execute();
+
 $result = $stmt->fetchAll();
+$results = $main->fetchAll();
 ?>
 
 
@@ -24,6 +28,7 @@ $result = $stmt->fetchAll();
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style-index.css">
+    <link rel="stylesheet" href="./style/main.css">
     <title>Blog met mijjjj</title>
 </head>
 <body>
@@ -47,7 +52,13 @@ $result = $stmt->fetchAll();
         </div>
     </div>
     <div id="right_side">
+        <?php foreach ($results as $row) { ?>
 
+                <a href="./Read/index.php?ID=<?= $row['BlogNummer']; ?>" class="card">
+                    <li><h3><?= $row['BlogOnderwerp']. " - " . $row["wie"]?></h3></li>
+                </a>
+
+        <?php }?>
     </div>
 </div>
 </body>
