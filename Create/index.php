@@ -9,19 +9,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="../style/form.css">
 </head>
 <body>
-    <h1></h1>
+
     <form method="post" action="./Create.php">
+        <h1>form</h1>
         <label for="onderwerp">je onderwerp:</label>
         <input type="text" id="onderwerp" name="onderwerp">
+        <br>
 
         <label for="subtekst">subtekst</label>
         <input type="text" id="subtekst" name="subtekst">
-
+        <br>
         <label for="body">body tekst</label>
         <input type="text" id="body" name="body">
-
+        <br>
 
 
         <label for="wie">wie</label>
@@ -30,7 +33,9 @@
             <option value="Sven">Sven</option>
             <option value="Niels">Niels</option>
         </select>
-        <input type="submit">
+        <br>
+        <input type="submit" class="submit">
+        <a href="../" class="back">go back</a>
     </form>
 </body>
 </html>
