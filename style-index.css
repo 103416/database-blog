@@ -5,11 +5,6 @@ body {
     background-color: #50439a;
 }
 
-
-
-
-
-
 #main_grid {
     display: grid;
     grid-template-rows: 1fr 10fr;
@@ -48,16 +43,33 @@ body {
 }
 
 #left_side {
-    display: grid;
     background-color: #5d48c8;
+
+    #nieuwste_title {
+        margin: 40px 0 0 35px;
+        color: #bebad8;
+    }
+
+    #lijntje {
+        background-color: white;
+        height: 1px;
+        margin: 40px 15px 30px 15px;
+    }
 }
 
 .db_section {
-    margin: 20px 20px 20px 40px;
-    padding: 0px 20px 5px 20px;
+    margin: 20px 20px 20px 20px;
+    padding: 5px 20px 5px 25px;
     background-color: var(--light);
     border-radius: 10px;
     box-shadow: var(--dark) 4px 3px 5px 1px;
+    height: 80%;
+
+    :hover {
+        h1 {
+            text-decoration: underline;
+        }
+    }
 }
 .db_section a{
     text-decoration: none;
