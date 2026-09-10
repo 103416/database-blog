@@ -27,22 +27,31 @@ $result = $stmt->fetchAll();
     <title>Blog met mijjjj</title>
 </head>
 <body>
-<a href="./Create">create blog</a>
-<a href="./Delete">Delete blog</a>
-<a href="./Update">update blog</a>
-<h1>Welkom bij onze blog</h1>
+<div id="main_grid">
+    <div id="balkie">
+        <a href="./Create">Create</a>
+        <a href="./Update">Update</a>
+        <a href="./Delete">Delete</a>
+    </div>
+    <div id="left_side">
+        <h1>Welkom bij onze blog</h1>
 
-<h3>"Wat als ik niet gewelkomt wil worden"</h3>
-<div id="main">
-    <?php foreach ($result as $row) { ?>
-<div class="db_section">
-    <a href="./Read/index.php?ID=<?= $row['BlogNummer']; ?>" class="ding">
-        <h1><?= $row['BlogOnderwerp']. " - " . $row["wie"]?></h1>
-        <h3><?= $row["BlogSubTekst"]?></h3>
-        <p><?= $row["BlogBody"]?></p>
-    </a>
-</div>
-    <?php }?>
+        <h3>"Wat als ik niet gewelkomt wil worden"</h3>
+        <div id="main">
+            <?php foreach ($result as $row) { ?>
+                <div class="db_section">
+                    <a href="./Read/index.php?ID=<?= $row['BlogNummer']; ?>" class="ding">
+                        <h1><?= $row['BlogOnderwerp']. " - " . $row["wie"]?></h1>
+                        <h3><?= $row["BlogSubTekst"]?></h3>
+                        <p><?= $row["BlogBody"]?></p>
+                    </a>
+                </div>
+            <?php }?>
+        </div>
+    </div>
+    <div id="right_side">
+
+    </div>
 </div>
 </body>
 </html>
