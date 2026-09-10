@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../style/form.css">
+    <link rel="stylesheet" href="../style/main.css">
 </head>
 <body>
 

@@ -1,6 +1,7 @@
 form{
     width: clamp(200px, 50vw, 1000px);
-    background: #ff0000;
+    background: var(--main);
+    border: var(--light) 2px solid;
     align-items: center;
     display: flex;
     flex-direction: column;
