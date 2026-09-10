@@ -39,7 +39,6 @@ $results = $main->fetchAll();
         <a href="./Delete">Delete</a>
     </div>
     <div id="left_side">
-        <div id="main">
             <?php foreach ($result as $row) { ?>
                 <div class="db_section">
                     <a href="./Read/index.php?ID=<?= $row['BlogNummer']; ?>" class="ding">
@@ -49,7 +48,6 @@ $results = $main->fetchAll();
                     </a>
                 </div>
             <?php }?>
-        </div>
     </div>
     <div id="right_side">
         <?php foreach ($results as $row) { ?>

@@ -5,19 +5,10 @@ body {
     background-color: #50439a;
 }
 
-#main {
-    display: flex;
-}
 
-.db_section {
-    margin: 20px;
-    padding: 0px 20px 5px 20px;
-    display: flex;
-    flex-direction: column;
-    background-color: lightblue;
-    border-radius: 10px;
-    box-shadow: #579199 4px 3px 5px 1px;
-}
+
+
+
 
 #main_grid {
     display: grid;
@@ -59,7 +50,17 @@ body {
 #left_side {
     display: grid;
     background-color: #5d48c8;
-    align-content: baseline;
+}
+
+.db_section {
+    margin: 20px 20px 20px 40px;
+    padding: 0px 20px 5px 20px;
+    background-color: var(--light);
+    border-radius: 10px;
+    box-shadow: var(--dark) 4px 3px 5px 1px;
+}
+.db_section a{
+    text-decoration: none;
 }
 
 #right_side {
