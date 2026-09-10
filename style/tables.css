@@ -24,7 +24,7 @@ tr td:nth-child(4), tr td:nth-child(5) {
     width: 5%;
 }
 tr td:nth-child(5){
-    background: green;
+    background: var(--light);
 }
 tr td:nth-child(5) a{
     text-decoration: none;
@@ -41,8 +41,16 @@ body .back{
     position: absolute;
     width: 150px;
     height: 50px;
-    background: green;
+    background: var(--lighter);
+    font-size: 32px;
+    font-weight: bolder;
     text-align: center;
     color: white;
     justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+body .back:hover {
+    cursor: pointer;
+    background: var(--light);
 }
