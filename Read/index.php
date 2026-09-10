@@ -34,7 +34,7 @@ $results = $stmt->fetchAll();
             <h1><?= $row['BlogOnderwerp']. " - " . $row["wie"]?></h1>
             <h3><?= $row["BlogSubTekst"]?></h3>
             <p><?= $row["BlogBody"]?></p>
-            <a href="../">back </a>
+            <a class="back" href="../">back </a>
         </div>
 
 <?php }?>
