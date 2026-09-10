@@ -45,16 +45,17 @@ body {
 #left_side {
     background-color: #5d48c8;
 
-    #nieuwste_title {
-        margin: 40px 0 0 35px;
-        color: #bebad8;
-    }
+}
 
-    #lijntje {
-        background-color: white;
-        height: 1px;
-        margin: 40px 15px 30px 15px;
-    }
+.nieuwste_title {
+    margin: 40px 0 0 35px;
+    color: var(--darkest);
+}
+
+.lijntje {
+    background-color: var(--darkest);
+    height: 3px;
+    margin: 40px 15px 30px 15px;
 }
 
 .db_section {
@@ -93,4 +94,13 @@ body {
     color: var(--dark);
     border-radius: 5px;
     border: solid 3px var(--light);
+    text-decoration: none;
+
+    :hover {
+        text-decoration: underline;
+    }
+
+    :active {
+        color: red;
+    }
 }

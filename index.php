@@ -39,8 +39,8 @@ $results = $main->fetchAll();
         <a href="./Delete">Delete</a>
     </div>
     <div id="left_side">
-        <h1 id="nieuwste_title">Nieuwste blogpost</h1>
-        <div id="lijntje"></div>
+        <h1 class="nieuwste_title">Nieuwste blogpost</h1>
+        <div class="lijntje"></div>
             <?php foreach ($result as $row) { ?>
                 <div class="db_section">
                     <a href="./Read/index.php?ID=<?= $row['BlogNummer']; ?>" class="ding">
@@ -52,6 +52,8 @@ $results = $main->fetchAll();
             <?php }?>
     </div>
     <div id="right_side">
+        <h1 class="nieuwste_title">Oude posts</h1>
+        <div class="lijntje"></div>
         <?php foreach ($results as $row) { ?>
 
                 <a href="./Read/index.php?ID=<?= $row['BlogNummer']; ?>" class="card">
