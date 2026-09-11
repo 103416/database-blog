@@ -7,6 +7,7 @@
     padding: 10px;
     border: 4px solid var(--light);
     justify-self: center;
+    color: var(--darkest);
 }
 .card h1{
     background: var(--light);
@@ -17,17 +18,22 @@
 }
 .card h3{
     width: 65%;
-    background: red;
     padding: 20px;
     left: 0;
     margin: 3px 0 0 -10px;
 }
 .card p{
     width: 85%;
-    background: #50439a;
     margin: 3px 0 0 -10px;
     padding: 15px;
 }
+.innertext{
+    background: var(--lighter);
+    margin: 3px -10px 0 -10px;
+    border: solid 3px var(--light);
+    padding: 5px 10px 0 0;
+}
+
 .back{
     margin: 25px 0 0 0;
     display: flex;

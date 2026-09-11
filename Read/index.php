@@ -32,8 +32,10 @@ $results = $stmt->fetchAll();
 <?php foreach ($results as $row) { ?>
         <div class="card">
             <h1><?= $row['BlogOnderwerp']. " - " . $row["wie"]?></h1>
-            <h3><?= $row["BlogSubTekst"]?></h3>
-            <p><?= $row["BlogBody"]?></p>
+            <div class="innertext">
+                <h3><?= $row["BlogSubTekst"]?></h3>
+                <p><?= $row["BlogBody"]?></p>
+            </div>
             <a class="back" href="../">back </a>
         </div>
 
