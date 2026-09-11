@@ -32,7 +32,7 @@ form .card{
 }
 
 form .submit{
-    background: green;
+    background: #b798ff;
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -43,7 +43,7 @@ form .submit:hover{
 }
 
 form .back{
-    background: green;
+    background: #b798ff;
     padding: 10px;
     border-radius: 10px;
     border: none;
