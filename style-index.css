@@ -90,8 +90,6 @@ body {
     scrollbar-width: none;
 }
 
-
-
 #right_side .card{
     background: var(--lighter);
     height: fit-content;
