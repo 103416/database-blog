@@ -10,10 +10,10 @@ try {
     echo $e->getMessage();
 }
 //pakt de database
-$stmt = $pdo->prepare("SELECT * FROM BlowBlo0gske ORDER BY BlogNummer ASC LIMIT 1");
+$stmt = $pdo->prepare("SELECT * FROM BlowBlo0gske ORDER BY BlogNummer DESC LIMIT 1");
 $stmt->execute();
 
-$main = $pdo->prepare("SELECT * FROM BlowBlo0gske");
+$main = $pdo->prepare("SELECT * FROM BlowBlo0gske ORDER BY BlogNummer DESC");
 $main->execute();
 
 $result = $stmt->fetchAll();
