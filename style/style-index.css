@@ -20,6 +20,7 @@ body {
     background-color: #5d48c8;
     display: flex;
     padding: 30px 20px 30px 20px;
+    margin-right: 40px;
 
     a {
         color: black;
@@ -44,7 +45,7 @@ body {
 
 #left_side {
     background-color: #5d48c8;
-
+    margin-bottom: 40px;
 }
 
 .nieuwste_title {
@@ -88,6 +89,7 @@ body {
     background-color: #5d48c8;
     overflow: scroll;
     scrollbar-width: none;
+    margin: 0 40px 40px 0;
 }
 
 #right_side .card{
