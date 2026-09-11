@@ -29,7 +29,7 @@ $results = $main->fetchAll();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/style-index.css">
     <link rel="stylesheet" href="./style/main.css">
-    <title>Blog met mijjjj</title>
+    <title>Blog met ons</title>
 </head>
 <body>
 <div id="main_grid">
