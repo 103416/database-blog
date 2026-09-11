@@ -36,10 +36,12 @@ form .submit{
     padding: 10px;
     border-radius: 10px;
     border: none;
+    transition: 0.3s;
 }
 form .submit:hover{
-    background: #024402;
+    background: #9e7ee8;
     cursor: pointer;
+    scale: 1.03;
 }
 
 form .back{
