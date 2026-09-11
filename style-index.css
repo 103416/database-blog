@@ -63,8 +63,14 @@ body {
     padding: 5px 20px 5px 25px;
     background-color: var(--light);
     border-radius: 10px;
+    border: solid 3px var(--light);
     box-shadow: var(--dark) 4px 3px 5px 1px;
     height: 80%;
+    color: var(--darkest);
+
+    a {
+        color: var(--darkest);
+    }
 
     :hover {
         h1 {
